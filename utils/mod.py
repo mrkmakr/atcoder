@@ -44,4 +44,8 @@ def factorial_part(start, last, mod):
         x %= mod
     return x
 
+def combination(n, a, mod):
+    nCa = div(factorial_part(n - a + 1, n, mod), factorial_part(1, a, mod), mod)
+    return nCa
+
 mod = int(1e9) + 7
