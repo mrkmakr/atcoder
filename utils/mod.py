@@ -45,6 +45,8 @@ def factorial_part(start, last, mod):
     return x
 
 def combination(n, a, mod):
+    if a == 0:
+        return 1
     nCa = div(factorial_part(n - a + 1, n, mod), factorial_part(1, a, mod), mod)
     return nCa
 
